@@ -43,6 +43,7 @@ int main(int argc, char *argv[]){
     node *list= NULL;
 
     for(int i=0; i<argc; i++){
-        printf("%s\n",argv[i]);
+        int number=atoi(argv[i]);
+        printf("%i\n", number);
     }
 }
