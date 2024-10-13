@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
 int main(void){
 
     //int list[3];
@@ -31,4 +31,18 @@ int main(void){
     }
     free(list);
     return 0;
+}
+*/
+
+typedef struct node{
+    int number;
+    struct node *next;
+}node;
+
+int main(int argc, char *argv[]){
+    node *list= NULL;
+
+    for(int i=0; i<argc; i++){
+        printf("%s\n",argv[i]);
+    }
 }
